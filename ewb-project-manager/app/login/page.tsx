@@ -28,41 +28,25 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen flex">
       {/* Left Side - Branding */}
-      <div className="hidden lg:flex lg:w-1/2 bg-gradient-to-br from-red-600 via-red-700 to-red-800 p-12 flex-col justify-between text-white">
+      <div className="hidden lg:flex lg:w-1/2 bg-gradient-to-br from-[#004E89] via-[#003D6B] to-[#002A4D] p-12 flex-col justify-center text-white">
         <div>
-          <div className="flex items-center gap-3 mb-8">
+          <div className="flex items-center gap-3 mb-12">
             <div className="w-12 h-12 bg-white rounded-lg flex items-center justify-center">
-              <span className="text-2xl font-bold text-red-600">EWB</span>
+              <span className="text-2xl font-bold text-[#004E89]">EWB</span>
             </div>
             <div>
               <h1 className="text-2xl font-bold">Engineers Without Borders</h1>
-              <p className="text-red-100 text-sm">University of Houston</p>
+              <p className="text-blue-200 text-sm">University of Houston</p>
             </div>
           </div>
 
-          <div className="space-y-6 mt-16">
-            <h2 className="text-4xl font-bold leading-tight">
-              Building a better world through engineering
+          <div className="space-y-8">
+            <h2 className="text-5xl font-bold leading-tight">
+              Our Mission
             </h2>
-            <p className="text-xl text-red-100">
-              Manage water access projects and collaborate with teams worldwide
+            <p className="text-xl text-blue-100 leading-relaxed">
+              EWB-UH aims to create enduring and inventive solutions for real-world issues, helping to strengthen global communities by giving our students hands-on experience.
             </p>
-          </div>
-        </div>
-
-        {/* Stats */}
-        <div className="grid grid-cols-3 gap-8 pt-8 border-t border-red-500">
-          <div>
-            <div className="text-3xl font-bold">12+</div>
-            <div className="text-red-200 text-sm">Active Projects</div>
-          </div>
-          <div>
-            <div className="text-3xl font-bold">8</div>
-            <div className="text-red-200 text-sm">Countries</div>
-          </div>
-          <div>
-            <div className="text-3xl font-bold">50K+</div>
-            <div className="text-red-200 text-sm">Lives Impacted</div>
           </div>
         </div>
       </div>
@@ -73,7 +57,7 @@ export default function LoginPage() {
           {/* Mobile Logo */}
           <div className="lg:hidden mb-8 text-center">
             <div className="inline-flex items-center gap-2 mb-2">
-              <div className="w-10 h-10 bg-red-600 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-[#004E89] rounded-lg flex items-center justify-center">
                 <span className="text-xl font-bold text-white">EWB</span>
               </div>
               <span className="text-xl font-bold text-gray-900">Engineers Without Borders</span>
@@ -106,7 +90,7 @@ export default function LoginPage() {
                     required={isSignUp}
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-transparent outline-none transition"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#004E89] focus:border-transparent outline-none transition"
                     placeholder="John Doe"
                   />
                 </div>
@@ -153,7 +137,7 @@ export default function LoginPage() {
                     />
                     <span className="ml-2 text-gray-600">Remember me</span>
                   </label>
-                  <a href="#" className="text-red-600 hover:text-red-700 font-medium">
+                  <a href="#" className="text-[#004E89] hover:text-[#003D6B] font-medium">
                     Forgot password?
                   </a>
                 </div>
@@ -161,7 +145,7 @@ export default function LoginPage() {
 
               <button
                 type="submit"
-                className="w-full bg-red-600 text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors shadow-lg hover:shadow-xl"
+                className="w-full bg-[#004E89] text-white py-3 rounded-lg font-semibold hover:bg-[#003D6B] transition-colors shadow-lg hover:shadow-xl"
               >
                 {isSignUp ? "Create Account" : "Sign In"}
               </button>
@@ -208,7 +192,7 @@ export default function LoginPage() {
               <button
                 type="button"
                 onClick={() => setIsSignUp(!isSignUp)}
-                className="text-red-600 hover:text-red-700 font-semibold"
+                className="text-[#004E89] hover:text-[#003D6B] font-semibold"
               >
                 {isSignUp ? "Sign in" : "Sign up"}
               </button>
